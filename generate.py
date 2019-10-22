@@ -7,7 +7,7 @@ from string import Template
 from os.path import join
 
 type_lst = ['cm', 'cdh']
-os_lst = ['redhat7']
+os_lst = ['redhat7', 'redhat6', 'sles12', 'ubuntu1604', 'ubuntu1804', 'sles12', 'generic']
 
 def generate(type, version, ops):
     file_dir = join(ops, type)
