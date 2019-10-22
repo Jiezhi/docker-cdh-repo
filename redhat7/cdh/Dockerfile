@@ -7,4 +7,4 @@ RUN set -ex; \
   apt install -y --no-install-recommends wget; \
   rm -rf /var/lib/apt/lists/*; \
   mkdir -p $HTTP_DIR; \
-  wget --no-check-certificate --recursive --no-parent --no-host-directories https://archive.cloudera.com/cdh/6.3.0/redhat7/ -P $HTTP_DIR
+  wget --no-check-certificate --recursive --no-parent --no-host-directories https://archive.cloudera.com/cdh6/6.3.0/redhat7/ -P $HTTP_DIR

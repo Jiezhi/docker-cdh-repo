@@ -18,7 +18,7 @@ def generate(type, version, ops):
     with open('Dockerfile.template', 'r')as f, open(file_path, 'w') as wf:
         content = f.read()
         template = Template(content)
-        wf.write(template.substitute(type=type, version=version, os=ops))
+        wf.write(template.substitute(type=type+v, version=version, os=ops))
 
 
 def make_file(version):
