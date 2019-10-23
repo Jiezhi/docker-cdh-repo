@@ -29,6 +29,7 @@ def make_file(version):
         generate('Dockerfile.template', ops, version, ops)
         generate('Dockerfile-CDH.template', join(ops, 'cdh'), version, ops)
         generate('Dockerfile-CM.template', join(ops, 'cm'), version, ops)
+        generate('Dockerfile-Parcel.template', join(ops, 'parcel'), version, ops)
 
 if __name__ == '__main__':
     version = sys.argv[1]
