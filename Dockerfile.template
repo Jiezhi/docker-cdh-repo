@@ -10,5 +10,5 @@ RUN set -ex; \
   wget --no-check-certificate --recursive --no-parent --no-host-directories https://archive.cloudera.com/cm$v/$version/$os/ -P $$HTTP_DIR; \
   wget --no-check-certificate https://archive.cloudera.com/cm$v/$version/allkeys.asc -P $$HTTP_DIR/cm$v/$version/; \
   wget --no-check-certificate --recursive --no-parent --no-host-directories https://archive.cloudera.com/cdh$v/$version/$os/ -P $$HTTP_DIR; \ 
-  wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/gplextras$v/$version/$os/ -P $$HTTP_DIR; \
+  wget --no-check-certificate --recursive --no-parent --no-host-directories https://archive.cloudera.com/gplextras$v/$version/$os/ -P $$HTTP_DIR; \
   chmod -R ugo+rX $$HTTP_DIR
