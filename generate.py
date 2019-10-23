@@ -15,7 +15,7 @@ from os.path import join
 #   wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/cdh$v/$version/parcels/ -P $HTTP_DIR; \ 
 #   wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/gplextras$v/$version/parcels/ -P $HTTP_DIR; \
 
-WGET_BASE = 'wget --recursive --no-parent --no-host-directories https://archive.cloudera.com/{sub_url} -P $HTTP_DIR'
+WGET_BASE = 'wget -nv --recursive --no-parent --no-host-directories https://archive.cloudera.com/{sub_url} -P $HTTP_DIR'
 WGET_CM = ['cm{v}/{version}/{ops}/', 'cm{v}/{version}/allkeys.asc', ]
 WGET_CDH = ['cdh{v}/{version}/{ops}/', 'gplextras{v}/{version}/{ops}/']
 # WGET_PARCEL = ['cdh$v/$version/parcels/', 'gplextras$v/$version/parcels/']
