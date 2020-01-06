@@ -10,6 +10,5 @@ RUN set -ex; \
   apt autoremove -y; \
   rm -rf /var/lib/apt/lists/*; \
   mkdir -p $HTTP_DIR; \
-  wget -nv --recursive --no-parent --no-host-directories https://archive.cloudera.com/cm6/6.3.1/redhat7/ -P $HTTP_DIR ;\
-  wget -nv --recursive --no-parent --no-host-directories https://archive.cloudera.com/cm6/6.3.1/allkeys.asc -P $HTTP_DIR ;\
+   ;\
   chmod -R ugo+rX $HTTP_DIR

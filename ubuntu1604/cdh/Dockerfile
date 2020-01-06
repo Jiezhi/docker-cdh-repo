@@ -10,6 +10,6 @@ RUN set -ex; \
   apt autoremove -y; \
   rm -rf /var/lib/apt/lists/*; \
   mkdir -p $HTTP_DIR; \
-  wget -nv --recursive --no-parent --no-host-directories https://archive.cloudera.com/cdh6/6.3.1/ubuntu1604/ -P $HTTP_DIR ;\
-  wget -nv --recursive --no-parent --no-host-directories https://archive.cloudera.com/gplextras6/6.3.1/ubuntu1604/ -P $HTTP_DIR ;\
+  wget -nv --recursive --no-parent --no-host-directories https://archive.cloudera.com/cdh6/6.3.2/ubuntu1604/ -P $HTTP_DIR ;\
+  wget -nv --recursive --no-parent --no-host-directories https://archive.cloudera.com/gplextras6/6.3.2/ubuntu1604/ -P $HTTP_DIR ;\
   chmod -R ugo+rX $HTTP_DIR
